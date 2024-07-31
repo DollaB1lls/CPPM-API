@@ -2,11 +2,12 @@
 # WIP - still doesnt do exactly what I want it to do
 
 from pyclearpass import *
+from apiclient import APIClient
 import json
 import requests
 
 login = ClearPassAPILogin(server="https://ptlcppm2.gopenske.com/api",
-                         api_token="1fa8c3151145337d2779605a6e61d7d39c2436cd",
+                         api_token="",
                          verify_ssl="true")
 
 print("hello")
