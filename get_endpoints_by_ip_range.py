@@ -6,7 +6,7 @@ import requests
 import dicttoxml
 
 login = ClearPassAPILogin(server="https://ptlcppm2.gopenske.com/api",
-                          api_token="1fa8c3151145337d2779605a6e61d7d39c2436cd",
+                          api_token="",
                           verify_ssl="True")
 headers = {
     "accept": "application/json"
@@ -17,7 +17,7 @@ headers = {
 #print(elements)
 
 #ip = input("Enter IP range:")
-ip = "3.145.96.0-255"
+ip = "3.146.33.0-255"
 
 get_ends = ApiLogs.get_insight_endpoint_ip_range_by_ip_range(login,ip)
 

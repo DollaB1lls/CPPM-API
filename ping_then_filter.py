@@ -25,6 +25,7 @@ if ip_address:
     #This block of code drops the last numbers of the IP
     ip_ad = str(ip_address)
     parts = ip_ad.split('.')
-    ip_filter = '.'.join(parts[:3]) + '.'
-    print(f"IP: {ip_filter}")
-    print()
+    ip = '.'.join(parts[:3]) + '.'
+    ip_filter = ip+"0-255"
+    print(f"IP: {ip}")
+    print(f"IP going into IP filter: {ip_filter}")

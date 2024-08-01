@@ -16,7 +16,7 @@ print("hello")
 ip_filter = '{"ip_address": {"$contains": "3.147.239.115"}}' #doesntwork
 attribute = "{'attributes': {'$equals': 'Penske Wired CatchAll': 'true'}}" #doesnwork
 statusfilter = '{"status": {"$eq": "known"}}' #works
-macfilter = '{"mac_address": {"$contains": "b400169cc1"}}' #works
+macfilter = '{"mac_address": {"$contains": "56a40e4ac534"}}' #works
 devicefilter = '{"device_category": {"$contains": "printer"}}'
 
 endpoints = ApiIdentities.get_endpoint(login,filter=macfilter, calculate_count="true",profile_details="True")
@@ -29,6 +29,19 @@ for ends in endpoints['_embedded']['items']:
     print(ends['attributes'])
     print()
     pass
+
+# for ends in endpoints['_embedded']['items']:
+#     attributes = ends.get('attributes', {})
+
+#     if attributes.get('Penske Wired CatchAll') == 'true':
+#         print()
+#         print("test2")
+#         print(ends)
+#         print()
+#         print(attributes)
+#         print()
+
+
 
 print("finished")
 
