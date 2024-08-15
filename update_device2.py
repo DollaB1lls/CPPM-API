@@ -5,7 +5,7 @@ from pyclearpass import ClearPassAPI
 client = ClearPassAPI(
     server='https://clearpass-server-url',
     client_id='demo',
-    client_secret='dMbvaEFUvifGQEUAv9Jk8UW+GISwMKs5HHuZCmremejx',
+    client_secret='',
     grant_type='client_credentials'  # Assuming OAuth2 client credentials flow
 )
 

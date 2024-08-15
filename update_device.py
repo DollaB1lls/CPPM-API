@@ -15,7 +15,7 @@ client = ClearPassAPILogin(
 # Example: Retrieve a device by IP address
 device_ip = '3.144.188.2'
 device_query = client.get('endpoint', params={'filter': f"ip_address='{device_ip}'"})
-
+device = client.
 # Check if the device exists
 if device_query['count'] > 0:
     device_id = device_query['items'][0]['id']
